@@ -67,7 +67,9 @@ section {
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
-    text-align: right;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(44, 73, 93,0.9);
 }
 
 .navbar__menu li {
@@ -220,4 +222,15 @@ section.your-active-class .landing__container::after {
 		           translate(-1em) 
 		           rotate(-360deg);
 	}
+}
+
+
+.nav_item {
+    color: #fafafa;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+.active-section {
+    color: #cccc11;
 }
