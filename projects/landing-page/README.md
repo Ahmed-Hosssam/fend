@@ -1,12 +1,17 @@
 # Landing Page Project
 
-### This is the first project for Udacity's web development professional course.
+### First project for Udacity's web development professional track.
+A multi-section landing page built using (html+css+JavaScript) where contents
+can be added dynamically.
 
-The Project has starter code. Lots of my code is Javascript code in js/app.js file and some modifications are made in
-index.html file.
-Starter code taken from the course repository.
 ## Table of Contents
+* [instructions](#instructions)
 * [Features made](#features made)
+
+
+##Instructions:
+- Open index.html file in your favourite browser to view the Landing Page.
+
 ##Features made:
 - Navigation is built dynamically as an unordered list
 - The section being viewed is highlighted so that its clear which section is currently being viewed

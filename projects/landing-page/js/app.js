@@ -23,35 +23,10 @@ const sections = document.querySelectorAll('section');
  * Start Helper Functions
  *
  */
-
-
-function getIds() {
-    var Ids = [];
-    sections.forEach(function (section) {
-        Ids.push(section.id);
-    });
-    return Ids;
-}
-
-function getData() {
-    var data = [];
-    sections.forEach(function (section) {
-        data.push(section.dataset.nav);
-    });
-    return data;
-}
-
-/**
- * End Helper Functions
- * Begin Main Functions
- *
- */
-
-// build the nav
 sections.forEach(function (section) {
-    var ul = document.getElementById("navbar__list");
-    var li = document.createElement("li");
-    var a = document.createElement("a");
+    let ul = document.getElementById("navbar__list");
+    let li = document.createElement("li");
+    let a = document.createElement("a");
     a.appendChild(document.createTextNode(section.dataset.nav));
     a.setAttribute("id", "nav_" + section.id);
     a.setAttribute("class", "nav_item");
@@ -60,10 +35,17 @@ sections.forEach(function (section) {
     li.appendChild(a);
     ul.appendChild(li);
 });
+/**
+ * End Helper Functions
+ * Begin Main Functions
+ *
+ */
+
+// build the nav
 const navItems = document.querySelectorAll('.nav_item');
 navItems.forEach(function (item, index, array) {
-    var sectionID = "#" + array[index].id.slice(4);
-    var section = document.querySelector(sectionID);
+    let sectionID = "#" + array[index].id.slice(4);
+    let section = document.querySelector(sectionID);
     array[index].addEventListener('click', function () {
         section.scrollIntoView({behavior: 'smooth'});
     });
@@ -92,7 +74,7 @@ navItems.forEach(function (item, index, array) {
 // Set sections as active
 
 function set() {
-    var section = document.querySelectorAll(".nav_item");
+    let  section = document.querySelectorAll(".nav_item");
     for (let i = 0; i < sections.length; i++) {
         if (InView(sections[i])) {
             section[i].classList.add("active-section");
