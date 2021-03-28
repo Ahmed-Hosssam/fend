@@ -7,7 +7,7 @@ can be added dynamically.
 ## Table of Contents
 * [instructions](#instructions)
   
-* [Features_made](#Features made)
+* [Features made](#Featuresmade)
 
 
 ## Instructions:
