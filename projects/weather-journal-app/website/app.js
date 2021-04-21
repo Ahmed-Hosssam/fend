@@ -23,7 +23,7 @@ function performAction(e) {
 
 
 const getWeather = async (baseURL, zip, key) => {
-    const response = await fetch(baseURL + zip + ',egy' + '&appid=' + key)
+    const response = await fetch(baseURL + zip + ',us' + '&appid=' + key)
     try {
         const data = await response.json();
         return data;
